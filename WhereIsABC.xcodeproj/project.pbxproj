@@ -76,6 +76,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		457A002C25815C3500C37417 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				45C905E3257D28DD00465BD1 /* AppDelegate.swift */,
+				45C905E5257D28DD00465BD1 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		457A002D25815C3A00C37417 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				45C905E7257D28DD00465BD1 /* ViewController.swift */,
+				45C905E9257D28DD00465BD1 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		457A002E25815C4100C37417 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		457A002F25815C4700C37417 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				45C905F1257D28DD00465BD1 /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		457A003025815C4F00C37417 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				45C905EC257D28DD00465BD1 /* Assets.xcassets */,
+				45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		45C905D7257D28DD00465BD1 = {
 			isa = PBXGroup;
 			children = (
@@ -99,13 +141,11 @@
 		45C905E2257D28DD00465BD1 /* WhereIsABC */ = {
 			isa = PBXGroup;
 			children = (
-				45C905E3257D28DD00465BD1 /* AppDelegate.swift */,
-				45C905E5257D28DD00465BD1 /* SceneDelegate.swift */,
-				45C905E7257D28DD00465BD1 /* ViewController.swift */,
-				45C905E9257D28DD00465BD1 /* Main.storyboard */,
-				45C905EC257D28DD00465BD1 /* Assets.xcassets */,
-				45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */,
-				45C905F1257D28DD00465BD1 /* Info.plist */,
+				457A002C25815C3500C37417 /* App */,
+				457A002E25815C4100C37417 /* Models */,
+				457A002D25815C3A00C37417 /* Views */,
+				457A002F25815C4700C37417 /* Plist */,
+				457A003025815C4F00C37417 /* Resources */,
 			);
 			path = WhereIsABC;
 			sourceTree = "<group>";
@@ -444,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.WhereIsABC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.whereisabc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -464,7 +504,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.WhereIsABC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.whereisabc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
