@@ -3,11 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		453DAB852582965B0093AF79 /* MorphingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 453DAB842582965B0093AF79 /* MorphingLabel */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
+		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
+		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
 		45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C905E3257D28DD00465BD1 /* AppDelegate.swift */; };
 		45C905E6257D28DD00465BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C905E5257D28DD00465BD1 /* SceneDelegate.swift */; };
 		45C905EB257D28DD00465BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C905E9257D28DD00465BD1 /* Main.storyboard */; };
@@ -36,6 +39,8 @@
 
 /* Begin PBXFileReference section */
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
+		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
 		45C905E0257D28DD00465BD1 /* WhereIsABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C905E3257D28DD00465BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C905E5257D28DD00465BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453DAB852582965B0093AF79 /* MorphingLabel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +110,7 @@
 		457A002F25815C4700C37417 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
+				458931442582AD71004A9BC9 /* Fonts */,
 				45C905F1257D28DD00465BD1 /* Info.plist */,
 			);
 			path = Plist;
@@ -116,6 +123,15 @@
 				45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		458931442582AD71004A9BC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				458931452582ADAE004A9BC9 /* beachday.ttf */,
+				458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		45C905D7257D28DD00465BD1 = {
@@ -184,6 +200,9 @@
 			dependencies = (
 			);
 			name = WhereIsABC;
+			packageProductDependencies = (
+				453DAB842582965B0093AF79 /* MorphingLabel */,
+			);
 			productName = WhereIsABC;
 			productReference = 45C905E0257D28DD00465BD1 /* WhereIsABC.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +274,9 @@
 				Base,
 			);
 			mainGroup = 45C905D7257D28DD00465BD1;
+			packageReferences = (
+				453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */,
+			);
 			productRefGroup = 45C905E1257D28DD00465BD1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -272,6 +294,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				45C905F0257D28DD00465BD1 /* LaunchScreen.storyboard in Resources */,
+				458931472582ADAE004A9BC9 /* beachday.ttf in Resources */,
+				458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */,
 				45C905ED257D28DD00465BD1 /* Assets.xcassets in Resources */,
 				45C905EB257D28DD00465BD1 /* Main.storyboard in Resources */,
 			);
@@ -478,7 +502,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = WhereIsABC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhereIsABC/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -498,7 +523,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
-				INFOPLIST_FILE = WhereIsABC/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/WhereIsABC/Plist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -635,6 +661,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lexrus/LTMorphingLabel";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		453DAB842582965B0093AF79 /* MorphingLabel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */;
+			productName = MorphingLabel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45C905D8257D28DD00465BD1 /* Project object */;
 }

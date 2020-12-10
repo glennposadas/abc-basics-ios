@@ -10,7 +10,7 @@
         <!--View Controller-->
         <scene sceneID="7Ag-wS-uzQ">
             <objects>
-                <viewController id="RNP-KR-lDW" customClass="ViewController" customModule="WhereIsABC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RNP-KR-lDW" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="33a-ML-tMN"/>
                         <viewControllerLayoutGuide type="bottom" id="eeB-26-OhU"/>

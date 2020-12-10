@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "MorphingLabel",
+        "repositoryURL": "https://github.com/lexrus/LTMorphingLabel",
+        "state": {
+          "branch": null,
+          "revision": "462f9e34b5cba1fb28f41ef68523be7bb967878d",
+          "version": "0.9.2"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
