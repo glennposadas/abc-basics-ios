@@ -20,28 +20,40 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wQ0-yu-TmP">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-le-L36">
-                                <rect key="frame" x="60" y="62" width="776" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-MY-I6L">
+                                <rect key="frame" x="60" y="188.5" width="776" height="16"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-le-L36" customClass="LTMorphingLabel" customModule="MorphingLabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="776" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="80"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di0-JM-nwE" userLabel="Label Title 2" customClass="LTMorphingLabel" customModule="MorphingLabel">
+                                        <rect key="frame" x="0.0" y="16" width="776" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="135"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E2C-Aj-Gcf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="E2C-Aj-Gcf" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="YNs-MY-I6L" secondAttribute="bottom" constant="16" id="0Ds-Qv-eBK"/>
                             <constraint firstAttribute="trailing" secondItem="wQ0-yu-TmP" secondAttribute="trailing" id="6lv-no-ebB"/>
                             <constraint firstItem="wQ0-yu-TmP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="7cR-cy-Ao6"/>
-                            <constraint firstItem="E2C-Aj-Gcf" firstAttribute="trailing" secondItem="dj9-le-L36" secondAttribute="trailing" constant="16" id="IWL-pe-Tuh"/>
-                            <constraint firstItem="dj9-le-L36" firstAttribute="leading" secondItem="E2C-Aj-Gcf" secondAttribute="leading" constant="16" id="NTe-Lw-wV2"/>
+                            <constraint firstItem="YNs-MY-I6L" firstAttribute="centerY" secondItem="E2C-Aj-Gcf" secondAttribute="centerY" id="Fnc-B4-Gtz"/>
+                            <constraint firstItem="E2C-Aj-Gcf" firstAttribute="trailing" secondItem="YNs-MY-I6L" secondAttribute="trailing" constant="16" id="TCD-8z-4d8"/>
                             <constraint firstItem="wQ0-yu-TmP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UYO-AM-HZQ"/>
-                            <constraint firstItem="dj9-le-L36" firstAttribute="top" secondItem="E2C-Aj-Gcf" secondAttribute="top" constant="62" id="YmC-tz-dYd"/>
-                            <constraint firstItem="E2C-Aj-Gcf" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dj9-le-L36" secondAttribute="bottom" constant="60" id="Zjr-9i-D0y"/>
+                            <constraint firstItem="YNs-MY-I6L" firstAttribute="leading" secondItem="E2C-Aj-Gcf" secondAttribute="leading" constant="16" id="o56-ko-pTl"/>
                             <constraint firstAttribute="bottom" secondItem="wQ0-yu-TmP" secondAttribute="bottom" id="zSc-f7-bz1"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="label_Title1" destination="dj9-le-L36" id="Ed5-os-Wur"/>
+                        <outlet property="label_Title2" destination="di0-JM-nwE" id="dQp-if-p9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,6 +61,10 @@
             <point key="canvasLocation" x="131.25" y="107.24637681159422"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="di0-JM-nwE"/>
+        <designable name="dj9-le-L36"/>
+    </designables>
     <resources>
         <image name="img_bg" width="709" height="868"/>
         <systemColor name="systemBackgroundColor">
