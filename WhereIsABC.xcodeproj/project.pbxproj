@@ -12,6 +12,7 @@
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
 		4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4589315A2582B719004A9BC9 /* BaseViewController.swift */; };
+		45893169258348C2004A9BC9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45893168258348C2004A9BC9 /* HomeViewController.swift */; };
 		45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C905E3257D28DD00465BD1 /* AppDelegate.swift */; };
 		45C905E6257D28DD00465BD1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C905E5257D28DD00465BD1 /* SceneDelegate.swift */; };
 		45C905EB257D28DD00465BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C905E9257D28DD00465BD1 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
 		4589315A2582B719004A9BC9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		45893168258348C2004A9BC9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = WhereIsABC/Views/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
 		45C905E0257D28DD00465BD1 /* WhereIsABC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhereIsABC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C905E3257D28DD00465BD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		45C905E5257D28DD00465BD1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				4589315A2582B719004A9BC9 /* BaseViewController.swift */,
+				45893168258348C2004A9BC9 /* HomeViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45893169258348C2004A9BC9 /* HomeViewController.swift in Sources */,
 				457A00382581BF1300C37417 /* SplashViewController.swift in Sources */,
 				4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */,
 				45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */,
