@@ -68,26 +68,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bwM-bx-Shk">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                            </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="bgd-mo-gQM">
-                                <rect key="frame" x="60" y="188.5" width="776" height="16"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vu-K2-iAG" customClass="LTMorphingLabel" customModule="MorphingLabel">
-                                        <rect key="frame" x="0.0" y="0.0" width="776" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="80"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ygS-Jr-woq" userLabel="Label Title 2" customClass="LTMorphingLabel" customModule="MorphingLabel">
-                                        <rect key="frame" x="0.0" y="16" width="776" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="135"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-Zz-B7s">
                                 <rect key="frame" x="816" y="20" width="60" height="60"/>
                                 <constraints>
@@ -104,12 +84,11 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnc-26-KOf">
-                                <rect key="frame" x="439" y="151" width="60" height="60"/>
+                                <rect key="frame" x="352.5" y="100" width="191" height="191"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="ToR-rT-u0W"/>
-                                    <constraint firstAttribute="width" constant="60" id="Wfw-t5-QLs"/>
+                                    <constraint firstAttribute="width" secondItem="Xnc-26-KOf" secondAttribute="height" multiplier="1:1" id="GHe-66-IPf"/>
                                 </constraints>
-                                <state key="normal" image="ic_info"/>
+                                <state key="normal" image="ic_play"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pry-a9-R8f"/>
@@ -117,23 +96,13 @@
                         <constraints>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="bottom" secondItem="7Jk-jk-Izh" secondAttribute="bottom" constant="15" id="1j2-WI-SpR"/>
                             <constraint firstItem="7Jk-jk-Izh" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="16" id="4Q2-Py-s82"/>
-                            <constraint firstItem="bgd-mo-gQM" firstAttribute="centerY" secondItem="pry-a9-R8f" secondAttribute="centerY" id="M4r-a3-3oy"/>
+                            <constraint firstItem="Xnc-26-KOf" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="100" id="ONe-SU-i8e"/>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="trailing" secondItem="7Jk-jk-Izh" secondAttribute="trailing" constant="16" id="PNK-BE-xwS"/>
-                            <constraint firstItem="pry-a9-R8f" firstAttribute="trailing" secondItem="bgd-mo-gQM" secondAttribute="trailing" constant="16" id="QRm-De-xTk"/>
                             <constraint firstAttribute="trailing" secondItem="wAD-Zz-B7s" secondAttribute="trailing" constant="20" id="TLa-pz-43s"/>
-                            <constraint firstAttribute="trailing" secondItem="bwM-bx-Shk" secondAttribute="trailing" id="TtX-Lg-QbS"/>
-                            <constraint firstItem="pry-a9-R8f" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="bgd-mo-gQM" secondAttribute="bottom" constant="16" id="YPn-QN-t5M"/>
-                            <constraint firstItem="bwM-bx-Shk" firstAttribute="top" secondItem="Jlg-Xo-OmA" secondAttribute="top" id="eg4-as-b6h"/>
-                            <constraint firstItem="bwM-bx-Shk" firstAttribute="leading" secondItem="Jlg-Xo-OmA" secondAttribute="leading" id="g52-LN-GsK"/>
+                            <constraint firstItem="7Jk-jk-Izh" firstAttribute="top" secondItem="Xnc-26-KOf" secondAttribute="bottom" constant="32" id="gfE-m3-kaL"/>
                             <constraint firstItem="wAD-Zz-B7s" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="qVD-vU-Lsw"/>
-                            <constraint firstItem="bgd-mo-gQM" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="16" id="r28-C5-0tc"/>
-                            <constraint firstAttribute="bottom" secondItem="bwM-bx-Shk" secondAttribute="bottom" id="zLj-0n-rh1"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="label_Title1" destination="3Vu-K2-iAG" id="kGt-n2-V2o"/>
-                        <outlet property="label_Title2" destination="ygS-Jr-woq" id="lFB-GX-o46"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqJ-rM-IGu" sceneMemberID="firstResponder"/>
             </objects>
@@ -141,13 +110,12 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="3Vu-K2-iAG"/>
         <designable name="di0-JM-nwE"/>
         <designable name="dj9-le-L36"/>
-        <designable name="ygS-Jr-woq"/>
     </designables>
     <resources>
         <image name="ic_info" width="40" height="40"/>
+        <image name="ic_play" width="168" height="168"/>
         <image name="img_bg" width="709" height="868"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
