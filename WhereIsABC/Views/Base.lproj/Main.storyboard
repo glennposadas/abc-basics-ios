@@ -40,6 +40,7 @@
                     <connections>
                         <outlet property="constraint_Bottom" destination="aAo-ST-Fo8" id="MZS-jI-8Pe"/>
                         <outlet property="constraint_Top" destination="yEZ-Is-AQn" id="AxS-8V-MgE"/>
+                        <outlet property="imageView_SplashIcon" destination="9d8-E9-mfa" id="1iL-ue-Q2c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

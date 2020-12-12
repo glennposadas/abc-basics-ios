@@ -14,6 +14,7 @@ class SplashViewController: BaseViewController {
     
     @IBOutlet weak var constraint_Top: NSLayoutConstraint!
     @IBOutlet weak var constraint_Bottom: NSLayoutConstraint!
+    @IBOutlet weak var imageView_SplashIcon: UIImageView!
     
     // MARK: - Overrides
     // MARK: Functions
@@ -37,6 +38,18 @@ class SplashViewController: BaseViewController {
             self.constraint_Top.constant = 50
             self.constraint_Bottom.constant = 50
             self.view.layoutIfNeeded()
-        })
+        })  {_ in
+            UIView.animate(withDuration: 0.5, delay: 1, animations: {
+                self.imageView_SplashIcon.alpha = 0
+            }) { _ in
+                self.goToHome()
+            }
+        }
+    }
+    
+    // MARK: - Navigations
+    
+    private func goToHome() {
+        
     }
 }
