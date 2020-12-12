@@ -13,6 +13,8 @@ extension String {
     }
     
     func gameIcon() -> UIImage? {
-        return nil
+        guard self.isALetter else { return nil }
+        
+        return UIImage(named: self)
     }
 }

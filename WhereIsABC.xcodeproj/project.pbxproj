@@ -3,13 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		45250B852585469700B1231D /* String+GameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B842585469700B1231D /* String+GameIcon.swift */; };
 		45250B9225854A7500B1231D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B9125854A7500B1231D /* UtilsTests.swift */; };
-		453DAB852582965B0093AF79 /* MorphingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 453DAB842582965B0093AF79 /* MorphingLabel */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
@@ -68,7 +67,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				453DAB852582965B0093AF79 /* MorphingLabel in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +226,6 @@
 			);
 			name = WhereIsABC;
 			packageProductDependencies = (
-				453DAB842582965B0093AF79 /* MorphingLabel */,
 			);
 			productName = WhereIsABC;
 			productReference = 45C905E0257D28DD00465BD1 /* WhereIsABC.app */;
@@ -303,7 +300,6 @@
 			);
 			mainGroup = 45C905D7257D28DD00465BD1;
 			packageReferences = (
-				453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */,
 			);
 			productRefGroup = 45C905E1257D28DD00465BD1 /* Products */;
 			projectDirPath = "";
@@ -697,25 +693,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/lexrus/LTMorphingLabel";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.9.2;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		453DAB842582965B0093AF79 /* MorphingLabel */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 453DAB832582965B0093AF79 /* XCRemoteSwiftPackageReference "LTMorphingLabel" */;
-			productName = MorphingLabel;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 45C905D8257D28DD00465BD1 /* Project object */;
 }

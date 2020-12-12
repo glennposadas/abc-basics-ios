@@ -12,7 +12,8 @@ class SplashViewController: BaseViewController {
 
     // MARK: - Properties
     
-    @IBOutlet weak var label_Title1: LTMorphingLabel!
+    @IBOutlet weak var constraint_Top: NSLayoutConstraint!
+    @IBOutlet weak var constraint_Bottom: NSLayoutConstraint!
     
     // MARK: - Overrides
     // MARK: Functions
@@ -26,24 +27,16 @@ class SplashViewController: BaseViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        animateViews(withDelay: 1)
+        self.animateViews()
     }
     
-    private func setupViews() {
-        let title1FontScale: CGFloat = 0.2
-        
-        let screenHeight = self.view.frame.height
-        
-        label_Title1.adjustsFontSizeToFitWidth = true
-        label_Title1.font = UIFont(name: "Beachday", size: screenHeight * title1FontScale)
-    }
+    private func setupViews() { }
     
-    private func animateViews(withDelay delay: Int = 0) {
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(delay)) {
-            self.label_Title1.morphingEffect = .fall
-            self.label_Title1.text = "Where is"
-            
-            
-        }
+    private func animateViews() {
+        UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
+            self.constraint_Top.constant = 50
+            self.constraint_Bottom.constant = 50
+            self.view.layoutIfNeeded()
+        })
     }
 }
