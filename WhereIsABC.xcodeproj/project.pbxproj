@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45250B852585469700B1231D /* String+GameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B842585469700B1231D /* String+GameIcon.swift */; };
+		45250B9225854A7500B1231D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B9125854A7500B1231D /* UtilsTests.swift */; };
 		453DAB852582965B0093AF79 /* MorphingLabel in Frameworks */ = {isa = PBXBuildFile; productRef = 453DAB842582965B0093AF79 /* MorphingLabel */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
@@ -18,7 +20,6 @@
 		45C905EB257D28DD00465BD1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C905E9257D28DD00465BD1 /* Main.storyboard */; };
 		45C905ED257D28DD00465BD1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45C905EC257D28DD00465BD1 /* Assets.xcassets */; };
 		45C905F0257D28DD00465BD1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */; };
-		45C905FB257D28DE00465BD1 /* WhereIsABCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C905FA257D28DE00465BD1 /* WhereIsABCTests.swift */; };
 		45C90606257D28DE00465BD1 /* WhereIsABCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45C90605257D28DE00465BD1 /* WhereIsABCUITests.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45250B842585469700B1231D /* String+GameIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GameIcon.swift"; sourceTree = "<group>"; };
+		45250B9025854A7500B1231D /* WhereIsABCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhereIsABCTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		45250B9125854A7500B1231D /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -53,7 +57,6 @@
 		45C905EF257D28DD00465BD1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45C905F1257D28DD00465BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C905F6257D28DE00465BD1 /* WhereIsABCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereIsABCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		45C905FA257D28DE00465BD1 /* WhereIsABCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsABCTests.swift; sourceTree = "<group>"; };
 		45C905FC257D28DE00465BD1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45C90601257D28DE00465BD1 /* WhereIsABCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhereIsABCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		45C90605257D28DE00465BD1 /* WhereIsABCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhereIsABCUITests.swift; sourceTree = "<group>"; };
@@ -86,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45250B89258546A100B1231D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				45250B842585469700B1231D /* String+GameIcon.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		457A002C25815C3500C37417 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +186,7 @@
 				457A002E25815C4100C37417 /* Models */,
 				457A002D25815C3A00C37417 /* Views */,
 				457A002F25815C4700C37417 /* Plist */,
+				45250B89258546A100B1231D /* Utils */,
 				457A003025815C4F00C37417 /* Resources */,
 			);
 			path = WhereIsABC;
@@ -183,8 +195,9 @@
 		45C905F9257D28DE00465BD1 /* WhereIsABCTests */ = {
 			isa = PBXGroup;
 			children = (
-				45C905FA257D28DE00465BD1 /* WhereIsABCTests.swift */,
 				45C905FC257D28DE00465BD1 /* Info.plist */,
+				45250B9125854A7500B1231D /* UtilsTests.swift */,
+				45250B9025854A7500B1231D /* WhereIsABCTests-Bridging-Header.h */,
 			);
 			path = WhereIsABCTests;
 			sourceTree = "<group>";
@@ -271,6 +284,7 @@
 					};
 					45C905F5257D28DE00465BD1 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 						TestTargetID = 45C905DF257D28DD00465BD1;
 					};
 					45C90600257D28DE00465BD1 = {
@@ -337,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45893169258348C2004A9BC9 /* HomeViewController.swift in Sources */,
+				45250B852585469700B1231D /* String+GameIcon.swift in Sources */,
 				457A00382581BF1300C37417 /* SplashViewController.swift in Sources */,
 				4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */,
 				45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */,
@@ -348,7 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				45C905FB257D28DE00465BD1 /* WhereIsABCTests.swift in Sources */,
+				45250B9225854A7500B1231D /* UtilsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +573,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = WhereIsABCTests/Info.plist;
@@ -569,6 +585,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.WhereIsABCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhereIsABCTests/WhereIsABCTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhereIsABC.app/WhereIsABC";
@@ -580,6 +598,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RE4YFXSB23;
 				INFOPLIST_FILE = WhereIsABCTests/Info.plist;
@@ -591,6 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.glennposadas.kidsgames.WhereIsABCTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WhereIsABCTests/WhereIsABCTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WhereIsABC.app/WhereIsABC";
