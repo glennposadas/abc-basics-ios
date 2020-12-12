@@ -21,17 +21,11 @@
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YNs-MY-I6L">
-                                <rect key="frame" x="60" y="188.5" width="776" height="16"/>
+                                <rect key="frame" x="60" y="196.5" width="776" height="0.0"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj9-le-L36" customClass="LTMorphingLabel" customModule="MorphingLabel">
                                         <rect key="frame" x="0.0" y="0.0" width="776" height="0.0"/>
                                         <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="80"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di0-JM-nwE" userLabel="Label Title 2" customClass="LTMorphingLabel" customModule="MorphingLabel">
-                                        <rect key="frame" x="0.0" y="16" width="776" height="0.0"/>
-                                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="135"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -53,7 +47,6 @@
                     </view>
                     <connections>
                         <outlet property="label_Title1" destination="dj9-le-L36" id="Ed5-os-Wur"/>
-                        <outlet property="label_Title2" destination="di0-JM-nwE" id="dQp-if-p9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -110,13 +103,12 @@
         </scene>
     </scenes>
     <designables>
-        <designable name="di0-JM-nwE"/>
         <designable name="dj9-le-L36"/>
     </designables>
     <resources>
         <image name="ic_info" width="40" height="40"/>
         <image name="ic_play" width="168" height="168"/>
-        <image name="img_bg" width="709" height="868"/>
+        <image name="img_bg" width="1813" height="2004"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
