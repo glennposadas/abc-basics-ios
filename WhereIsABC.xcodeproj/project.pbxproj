@@ -3,12 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		45250B852585469700B1231D /* String+GameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B842585469700B1231D /* String+GameIcon.swift */; };
 		45250B9225854A7500B1231D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B9125854A7500B1231D /* UtilsTests.swift */; };
+		452515222586786C000E4935 /* WIAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452515212586786C000E4935 /* WIAButton.swift */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
@@ -50,6 +51,7 @@
 		45250B842585469700B1231D /* String+GameIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GameIcon.swift"; sourceTree = "<group>"; };
 		45250B9025854A7500B1231D /* WhereIsABCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhereIsABCTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		45250B9125854A7500B1231D /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
+		452515212586786C000E4935 /* WIAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIAButton.swift; sourceTree = "<group>"; };
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -112,6 +114,13 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		4525152625868F08000E4935 /* SFX */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SFX;
+			sourceTree = "<group>";
+		};
 		457A002C25815C3500C37417 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +159,7 @@
 		457A003025815C4F00C37417 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4525152625868F08000E4935 /* SFX */,
 				45C905EC257D28DD00465BD1 /* Assets.xcassets */,
 				45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */,
 			);
@@ -170,6 +180,7 @@
 			children = (
 				4589315A2582B719004A9BC9 /* BaseViewController.swift */,
 				45893168258348C2004A9BC9 /* HomeViewController.swift */,
+				452515212586786C000E4935 /* WIAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -240,7 +251,6 @@
 				98936D31821012656CF76D29 /* Pods-WhereIsABCUITests.debug.xcconfig */,
 				4C629D674B9EC71B5C982465 /* Pods-WhereIsABCUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -499,6 +509,7 @@
 				45250B852585469700B1231D /* String+GameIcon.swift in Sources */,
 				457A00382581BF1300C37417 /* SplashViewController.swift in Sources */,
 				4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */,
+				452515222586786C000E4935 /* WIAButton.swift in Sources */,
 				45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */,
 				45C905E6257D28DD00465BD1 /* SceneDelegate.swift in Sources */,
 			);

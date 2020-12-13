@@ -70,26 +70,39 @@
                                     <constraint firstAttribute="height" constant="55" id="RBj-as-HVI"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnc-26-KOf">
-                                <rect key="frame" x="352.5" y="100" width="191" height="191"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnc-26-KOf">
+                                <rect key="frame" x="327.5" y="50" width="241" height="241"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Xnc-26-KOf" secondAttribute="height" multiplier="1:1" id="GHe-66-IPf"/>
                                 </constraints>
                                 <state key="normal" image="ic_play"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_abc_small" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-Ot-soZ">
+                                <rect key="frame" x="64" y="20" width="200" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="TMB-vG-73E"/>
+                                    <constraint firstAttribute="width" constant="200" id="ikk-jH-PWr"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pry-a9-R8f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="bottom" secondItem="7Jk-jk-Izh" secondAttribute="bottom" constant="15" id="1j2-WI-SpR"/>
                             <constraint firstItem="7Jk-jk-Izh" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="16" id="4Q2-Py-s82"/>
-                            <constraint firstItem="Xnc-26-KOf" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="100" id="ONe-SU-i8e"/>
+                            <constraint firstItem="ix0-Ot-soZ" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="20" id="8dM-k0-wQ0"/>
+                            <constraint firstItem="ix0-Ot-soZ" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="EeF-2T-kPW"/>
+                            <constraint firstItem="Xnc-26-KOf" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="50" id="ONe-SU-i8e"/>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="trailing" secondItem="7Jk-jk-Izh" secondAttribute="trailing" constant="16" id="PNK-BE-xwS"/>
                             <constraint firstAttribute="trailing" secondItem="wAD-Zz-B7s" secondAttribute="trailing" constant="20" id="TLa-pz-43s"/>
+                            <constraint firstItem="Xnc-26-KOf" firstAttribute="centerX" secondItem="pry-a9-R8f" secondAttribute="centerX" id="UCv-jp-Ylu"/>
                             <constraint firstItem="7Jk-jk-Izh" firstAttribute="top" secondItem="Xnc-26-KOf" secondAttribute="bottom" constant="32" id="gfE-m3-kaL"/>
                             <constraint firstItem="wAD-Zz-B7s" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="qVD-vU-Lsw"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="button_Play" destination="Xnc-26-KOf" id="iDz-Gy-7fN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqJ-rM-IGu" sceneMemberID="firstResponder"/>
             </objects>
@@ -98,7 +111,8 @@
     </scenes>
     <resources>
         <image name="ic_info" width="40" height="40"/>
-        <image name="ic_play" width="168" height="168"/>
+        <image name="ic_play" width="935" height="807"/>
+        <image name="img_abc_small" width="337.5" height="116"/>
         <image name="img_bg" width="1813" height="2004"/>
         <image name="img_splash" width="915" height="599.5"/>
         <systemColor name="systemBackgroundColor">

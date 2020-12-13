@@ -11,6 +11,8 @@ class HomeViewController: BaseViewController {
 
     // MARK: - Properties
     
+    @IBOutlet weak var button_Play: UIButton!
+    
     // MARK: - Overrides
     // MARK: Functions
     
