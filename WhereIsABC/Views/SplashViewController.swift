@@ -5,7 +5,6 @@
 //  Created by Glenn Posadas on 12/10/20.
 //
 
-import MorphingLabel
 import UIKit
 
 class SplashViewController: BaseViewController {
