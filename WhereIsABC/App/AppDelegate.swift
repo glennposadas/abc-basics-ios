@@ -20,5 +20,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
+    
+    func playBGMusic() {
+        let soundFilePath = "\(Bundle.main.resourcePath ?? "")/bg.mp3"
+        let soundFileURL = URL(fileURLWithPath: soundFilePath)
+
+        self.audioPlayer = try? AVAudioPlayer(contentsOf: soundFileURL)
+        self.audioPlayer?.numberOfLoops = -1 //Infinite
+
+        self.audioPlayer?.play()
+    }
 }
 
