@@ -49,6 +49,23 @@ class SplashViewController: BaseViewController {
     // MARK: - Navigations
     
     private func goToHome() {
+        let homeVC = mainSB.instantiateViewController(identifier: "HomeViewController")
+            as! HomeViewController
+        guard let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let sceneDelegate = windowScene.delegate as? SceneDelegate,
+              let window = sceneDelegate.window else { return }
         
+        window.rootViewController = homeVC
+        
+        UIView.transition(
+            with: window,
+            duration: 1.0,
+            options: [.transitionCrossDissolve],
+            animations: { },
+            completion: { done in
+                if done {
+                    
+                }
+        })
     }
 }

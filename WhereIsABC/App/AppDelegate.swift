@@ -9,6 +9,8 @@ import AVFoundation
 import Firebase
 import UIKit
 
+let mainSB = UIStoryboard(name: "Main", bundle: nil)
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

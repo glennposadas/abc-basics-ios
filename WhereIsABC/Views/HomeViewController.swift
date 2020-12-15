@@ -34,10 +34,10 @@ class HomeViewController: BaseViewController {
     }
     
     private func animatePlayButton() {
-        button_Play.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+        button_Play.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
         
         UIView.animate(
-            withDuration: 2.0,
+            withDuration: 2.5,
             delay: 0,
             usingSpringWithDamping: 0.20,
             initialSpringVelocity: 6.0,
