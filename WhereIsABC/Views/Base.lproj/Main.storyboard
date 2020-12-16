@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina5_9" orientation="landscape" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
@@ -14,14 +14,14 @@
             <objects>
                 <viewController storyboardIdentifier="SplashViewController" id="BYZ-38-t0r" customClass="SplashViewController" customModule="WhereIsABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wQ0-yu-TmP">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_splash" translatesAutoresizingMaskIntoConstraints="NO" id="9d8-E9-mfa">
-                                <rect key="frame" x="94" y="-1000" width="708" height="393"/>
+                                <rect key="frame" x="94" y="-1000" width="624" height="354"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="E2C-Aj-Gcf"/>
@@ -52,11 +52,39 @@
             <objects>
                 <viewController storyboardIdentifier="HomeViewController" id="xJa-R5-4sJ" customClass="HomeViewController" customModule="WhereIsABC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jlg-Xo-OmA">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="812" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-Zz-B7s">
-                                <rect key="frame" x="816" y="20" width="60" height="60"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8v4-J6-lSl">
+                                <rect key="frame" x="517" y="98.333333333333329" width="251" height="255.66666666666669"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_elephant" translatesAutoresizingMaskIntoConstraints="NO" id="ve5-Ft-NdY">
+                                        <rect key="frame" x="0.0" y="0.0" width="251" height="78.333333333333329"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_dog" translatesAutoresizingMaskIntoConstraints="NO" id="vG9-Zs-bM3">
+                                        <rect key="frame" x="0.0" y="88.333333333333314" width="251" height="78.666666666666686"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cat" translatesAutoresizingMaskIntoConstraints="NO" id="SoY-gL-oHC">
+                                        <rect key="frame" x="0.0" y="177" width="251" height="78.666666666666686"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XKv-XT-17P">
+                                <rect key="frame" x="64" y="20" width="231" height="314"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_abc_small" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-Ot-soZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="98"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_cow" translatesAutoresizingMaskIntoConstraints="NO" id="Rhq-SQ-LhV">
+                                        <rect key="frame" x="0.0" y="108" width="231" height="98"/>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bee" translatesAutoresizingMaskIntoConstraints="NO" id="1Bu-WB-Llj">
+                                        <rect key="frame" x="0.0" y="216" width="231" height="98"/>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wAD-Zz-B7s" userLabel="Info Button">
+                                <rect key="frame" x="732" y="20" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="LON-J9-GDG"/>
                                     <constraint firstAttribute="height" constant="60" id="ueB-xT-Y9f"/>
@@ -64,56 +92,56 @@
                                 <state key="normal" image="ic_info"/>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Jk-jk-Izh">
-                                <rect key="frame" x="60" y="323" width="776" height="55"/>
+                                <rect key="frame" x="60" y="284" width="692" height="55"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="RBj-as-HVI"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnc-26-KOf">
-                                <rect key="frame" x="327.5" y="50" width="241" height="241"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="Xnc-26-KOf" secondAttribute="height" multiplier="1:1" id="GHe-66-IPf"/>
-                                </constraints>
-                                <state key="normal" image="ic_play"/>
-                            </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_abc_small" translatesAutoresizingMaskIntoConstraints="NO" id="ix0-Ot-soZ">
-                                <rect key="frame" x="64" y="20" width="200" height="102"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="102" id="TMB-vG-73E"/>
-                                    <constraint firstAttribute="width" constant="200" id="ikk-jH-PWr"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Zed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pJy-Op-qxq">
-                                <rect key="frame" x="743" y="69.5" width="65" height="21"/>
+                                <rect key="frame" x="659.66666666666663" y="70" width="64.333333333333371" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oal-4J-uU0">
-                                <rect key="frame" x="759" y="35" width="51" height="31"/>
+                                <rect key="frame" x="675" y="35.333333333333336" width="51" height="31.000000000000007"/>
                                 <connections>
                                     <action selector="useZedSwitchDidChange:" destination="xJa-R5-4sJ" eventType="valueChanged" id="Eef-CC-kY2"/>
                                 </connections>
                             </switch>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xnc-26-KOf">
+                                <rect key="frame" x="305" y="50" width="202" height="202"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Xnc-26-KOf" secondAttribute="height" multiplier="1:1" id="GHe-66-IPf"/>
+                                </constraints>
+                                <state key="normal" image="ic_play"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pry-a9-R8f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="bottom" secondItem="7Jk-jk-Izh" secondAttribute="bottom" constant="15" id="1j2-WI-SpR"/>
                             <constraint firstItem="7Jk-jk-Izh" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="16" id="4Q2-Py-s82"/>
-                            <constraint firstItem="ix0-Ot-soZ" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="20" id="8dM-k0-wQ0"/>
-                            <constraint firstItem="ix0-Ot-soZ" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="EeF-2T-kPW"/>
+                            <constraint firstItem="pry-a9-R8f" firstAttribute="bottom" secondItem="XKv-XT-17P" secondAttribute="bottom" constant="20" id="5FP-VF-t8e"/>
+                            <constraint firstItem="8v4-J6-lSl" firstAttribute="leading" secondItem="Xnc-26-KOf" secondAttribute="trailing" constant="10" id="927-MK-mXH"/>
+                            <constraint firstItem="pJy-Op-qxq" firstAttribute="leading" secondItem="Xnc-26-KOf" secondAttribute="trailing" constant="152.66666666666663" id="C6a-4U-uYl"/>
+                            <constraint firstItem="XKv-XT-17P" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="KDJ-L4-hwY"/>
+                            <constraint firstItem="8v4-J6-lSl" firstAttribute="bottom" secondItem="pry-a9-R8f" secondAttribute="bottom" id="OHI-xQ-rJX"/>
                             <constraint firstItem="Xnc-26-KOf" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="50" id="ONe-SU-i8e"/>
+                            <constraint firstItem="Xnc-26-KOf" firstAttribute="leading" secondItem="XKv-XT-17P" secondAttribute="trailing" constant="10" id="OV1-3g-vZR"/>
                             <constraint firstItem="pry-a9-R8f" firstAttribute="trailing" secondItem="7Jk-jk-Izh" secondAttribute="trailing" constant="16" id="PNK-BE-xwS"/>
                             <constraint firstAttribute="trailing" secondItem="wAD-Zz-B7s" secondAttribute="trailing" constant="20" id="TLa-pz-43s"/>
                             <constraint firstItem="Xnc-26-KOf" firstAttribute="centerX" secondItem="pry-a9-R8f" secondAttribute="centerX" id="UCv-jp-Ylu"/>
+                            <constraint firstItem="XKv-XT-17P" firstAttribute="leading" secondItem="pry-a9-R8f" secondAttribute="leading" constant="20" id="UIt-Xk-Xzz"/>
                             <constraint firstItem="pJy-Op-qxq" firstAttribute="top" secondItem="oal-4J-uU0" secondAttribute="bottom" constant="3.5" id="aio-3n-KqA"/>
+                            <constraint firstItem="pry-a9-R8f" firstAttribute="trailing" secondItem="8v4-J6-lSl" secondAttribute="trailing" id="ddB-36-vEF"/>
                             <constraint firstItem="oal-4J-uU0" firstAttribute="trailing" secondItem="pJy-Op-qxq" secondAttribute="trailing" id="dwc-Ih-qpO"/>
                             <constraint firstItem="pJy-Op-qxq" firstAttribute="centerY" secondItem="wAD-Zz-B7s" secondAttribute="centerY" constant="30" id="eUY-Ze-r3p"/>
                             <constraint firstItem="7Jk-jk-Izh" firstAttribute="top" secondItem="Xnc-26-KOf" secondAttribute="bottom" constant="32" id="gfE-m3-kaL"/>
                             <constraint firstItem="wAD-Zz-B7s" firstAttribute="top" secondItem="pry-a9-R8f" secondAttribute="top" constant="20" id="qVD-vU-Lsw"/>
                             <constraint firstItem="wAD-Zz-B7s" firstAttribute="leading" secondItem="pJy-Op-qxq" secondAttribute="trailing" constant="8" symbolic="YES" id="sAk-Ji-azw"/>
+                            <constraint firstItem="8v4-J6-lSl" firstAttribute="top" secondItem="pJy-Op-qxq" secondAttribute="bottom" constant="8" id="v7X-Jy-FZy"/>
                         </constraints>
                     </view>
                     <connections>
@@ -123,15 +151,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DqJ-rM-IGu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="231.69642857142856" y="492.75362318840581"/>
+            <point key="canvasLocation" x="231.2807881773399" y="492"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ic_bee" width="80" height="65"/>
+        <image name="ic_cat" width="80.666664123535156" height="80.666664123535156"/>
+        <image name="ic_cow" width="80" height="64"/>
+        <image name="ic_dog" width="81.333335876464844" height="108.66666412353516"/>
+        <image name="ic_elephant" width="81" height="77.666664123535156"/>
         <image name="ic_info" width="40" height="40"/>
-        <image name="ic_play" width="935" height="807"/>
-        <image name="img_abc_small" width="337.5" height="116"/>
+        <image name="ic_play" width="934.66668701171875" height="807"/>
+        <image name="img_abc_small" width="337.33334350585938" height="116"/>
         <image name="img_bg" width="1813" height="2004"/>
-        <image name="img_splash" width="915" height="599.5"/>
+        <image name="img_splash" width="915" height="599.33331298828125"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
