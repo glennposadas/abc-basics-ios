@@ -10,12 +10,12 @@
 		45250B852585469700B1231D /* String+GameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B842585469700B1231D /* String+GameIcon.swift */; };
 		45250B9225854A7500B1231D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B9125854A7500B1231D /* UtilsTests.swift */; };
 		452515222586786C000E4935 /* WIAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452515212586786C000E4935 /* WIAButton.swift */; };
-		4525152B25873DC2000E4935 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4525152A25873DC2000E4935 /* GoogleService-Info.plist */; };
 		452FB8C1258A709000A0C565 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8BE258A709000A0C565 /* bg.mp3 */; };
 		452FB8C2258A709000A0C565 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8BF258A709000A0C565 /* correct.wav */; };
 		452FB8C3258A709000A0C565 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8C0258A709000A0C565 /* wrong.mp3 */; };
 		452FB8C8258A80C800A0C565 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB8C7258A80C800A0C565 /* GameViewController.swift */; };
 		452FB8D3258A83B000A0C565 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB8D2258A83B000A0C565 /* UIViewController+Utils.swift */; };
+		452FB8D8258A8CB600A0C565 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8D7258A8CB600A0C565 /* GoogleService-Info.plist */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
@@ -58,12 +58,12 @@
 		45250B9025854A7500B1231D /* WhereIsABCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhereIsABCTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		45250B9125854A7500B1231D /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
 		452515212586786C000E4935 /* WIAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIAButton.swift; sourceTree = "<group>"; };
-		4525152A25873DC2000E4935 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		452FB8BE258A709000A0C565 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
 		452FB8BF258A709000A0C565 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
 		452FB8C0258A709000A0C565 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
 		452FB8C7258A80C800A0C565 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		452FB8D2258A83B000A0C565 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		452FB8D7258A8CB600A0C565 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -169,8 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				458931442582AD71004A9BC9 /* Fonts */,
-				4525152A25873DC2000E4935 /* GoogleService-Info.plist */,
 				45C905F1257D28DD00465BD1 /* Info.plist */,
+				452FB8D7258A8CB600A0C565 /* GoogleService-Info.plist */,
 			);
 			path = Plist;
 			sourceTree = "<group>";
@@ -392,13 +392,13 @@
 			files = (
 				45C905F0257D28DD00465BD1 /* LaunchScreen.storyboard in Resources */,
 				452FB8C2258A709000A0C565 /* correct.wav in Resources */,
+				452FB8D8258A8CB600A0C565 /* GoogleService-Info.plist in Resources */,
 				452FB8C1258A709000A0C565 /* bg.mp3 in Resources */,
 				458931472582ADAE004A9BC9 /* beachday.ttf in Resources */,
 				452FB8C3258A709000A0C565 /* wrong.mp3 in Resources */,
 				458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */,
 				45C905ED257D28DD00465BD1 /* Assets.xcassets in Resources */,
 				45C905EB257D28DD00465BD1 /* Main.storyboard in Resources */,
-				4525152B25873DC2000E4935 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

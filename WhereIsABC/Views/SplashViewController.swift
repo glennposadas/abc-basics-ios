@@ -62,10 +62,7 @@ class SplashViewController: BaseViewController {
             duration: 1.0,
             options: [.transitionCrossDissolve],
             animations: { },
-            completion: { done in
-                if done {
-                    homeVC.self.playBGMusic()
-                }
-        })
+            completion: nil
+        )
     }
 }

@@ -153,6 +153,9 @@
                                     <constraint firstAttribute="width" secondItem="Xnc-26-KOf" secondAttribute="height" multiplier="1:1" id="GHe-66-IPf"/>
                                 </constraints>
                                 <state key="normal" image="ic_play"/>
+                                <connections>
+                                    <action selector="play:" destination="xJa-R5-4sJ" eventType="touchUpInside" id="bR6-2k-vEF"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="pry-a9-R8f"/>

@@ -26,7 +26,15 @@ class HomeViewController: BaseViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        
+        playBGMusic()
         animatePlayButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        stopBGMusic()
     }
     
     private func setupViews() {
@@ -49,6 +57,14 @@ class HomeViewController: BaseViewController {
                 self.animatePlayButton()
             }
         }
+    }
+    
+    @IBAction func play(_ sender: Any) {
+        let gameController = mainSB.instantiateViewController(identifier: "GameViewController")
+            as! GameViewController
+        gameController.modalPresentationStyle = .fullScreen
+        gameController.modalTransitionStyle = .crossDissolve
+        self.present(gameController, animated: true, completion: nil)
     }
     
     @IBAction func useZedSwitchDidChange(_ sender: Any) {

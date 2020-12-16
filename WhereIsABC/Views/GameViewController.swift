@@ -5,11 +5,14 @@
 //  Created by Glenn Posadas on 12/17/20.
 //
 
+import AVFoundation
 import UIKit
 
 class GameViewController: BaseViewController {
     
     // MARK: - Properties
+    
+    private var audioPlayer: AVAudioPlayer?
     
     // MARK: - Overrides
     // MARK: Functions
@@ -17,6 +20,22 @@ class GameViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+    
+    private func playCorrect() {
+        playFile("correct.wav")
+    }
+    
+    private func playWrong() {
+        playFile("wrong.mp3")
+    }
+    
+    private func playFile(_ fileName: String) {
+        let soundFilePath = "\(Bundle.main.resourcePath ?? "")/\(fileName)"
+        let soundFileURL = URL(fileURLWithPath: soundFilePath)
+        
+        audioPlayer = try? AVAudioPlayer(contentsOf: soundFileURL)
+        audioPlayer?.play()
     }
     
     @IBAction func exit(_ sender: Any) {
@@ -32,6 +51,9 @@ class GameViewController: BaseViewController {
     }
     
     @IBAction func repeatQuestion(_ sender: Any) {
-        
+        self.playWrong()
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            self.playCorrect()
+        }
     }
 }

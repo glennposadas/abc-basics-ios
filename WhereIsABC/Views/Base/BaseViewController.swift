@@ -28,4 +28,10 @@ class BaseViewController: UIViewController {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
         appDelegate.playBGMusic()
     }
+    
+    /// Stop the bg music
+    func stopBGMusic() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        appDelegate.playBGMusic()
+    }
 }
