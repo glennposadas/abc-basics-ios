@@ -32,5 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.audioPlayer?.play()
     }
+    
+    func stopBGMusic() {
+        self.audioPlayer?.stop()
+    }
 }
 
