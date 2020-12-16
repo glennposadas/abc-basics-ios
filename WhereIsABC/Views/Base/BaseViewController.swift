@@ -22,4 +22,10 @@ class BaseViewController: UIViewController {
         super.viewDidLoad()
         
     }
+    
+    /// Start playing the bg music.
+    func playBGMusic() {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else { return }
+        appDelegate.playBGMusic()
+    }
 }

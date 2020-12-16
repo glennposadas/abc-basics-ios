@@ -64,7 +64,7 @@ class SplashViewController: BaseViewController {
             animations: { },
             completion: { done in
                 if done {
-                    
+                    homeVC.self.playBGMusic()
                 }
         })
     }

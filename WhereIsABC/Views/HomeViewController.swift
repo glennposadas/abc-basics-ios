@@ -37,14 +37,14 @@ class HomeViewController: BaseViewController {
         button_Play.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
         
         UIView.animate(
-            withDuration: 2.5,
+            withDuration: 10.0,
             delay: 0,
             usingSpringWithDamping: 0.20,
-            initialSpringVelocity: 6.0,
+            initialSpringVelocity: 5.0,
             options: .allowUserInteraction,
             animations: {
                 self.button_Play.transform = CGAffineTransform.identity
-        }) { (complete) in
+            }) { (complete) in
             if complete {
                 self.animatePlayButton()
             }
