@@ -260,6 +260,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bannerContainerView" destination="7Jk-jk-Izh" id="Frq-Tg-3oc"/>
                         <outlet property="button_Play" destination="Xnc-26-KOf" id="iDz-Gy-7fN"/>
                         <outlet property="switch_UseZed" destination="oal-4J-uU0" id="9bk-lf-yAY"/>
                     </connections>
