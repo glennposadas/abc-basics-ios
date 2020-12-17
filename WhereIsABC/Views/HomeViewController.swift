@@ -38,7 +38,8 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupViews() {
-
+        let useZed = AppDefaults.getObjectWithKey(.useZed, type: Bool.self) ?? false
+        switch_UseZed.setOn(useZed, animated: false)
     }
     
     private func animatePlayButton() {
