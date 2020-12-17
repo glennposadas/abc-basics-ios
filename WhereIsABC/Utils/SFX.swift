@@ -31,6 +31,14 @@ class SFX {
         player?.play()
     }
     
+    // MARK: - Questions
+    
+    func playQuestionForLetter(_ letter: Letter) {
+        let useZed = AppDefaults.getObjectWithKey(.useZed, type: Bool.self) ?? false
+        let fileName = (useZed ? "UK_" : "US_") + letter.stringValue.uppercased() + ".mp3"
+        playFile(fileName)
+    }
+    
     // MARK: - Result
     
     func playCorrect() {

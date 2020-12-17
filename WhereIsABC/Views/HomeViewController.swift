@@ -68,6 +68,8 @@ class HomeViewController: BaseViewController {
     }
     
     @IBAction func useZedSwitchDidChange(_ sender: Any) {
-        UserDefaults.standard.set(switch_UseZed.isOn, forKey: "DEFAULT_USE_ZED")
+        AppDefaults.store(switch_UseZed.isOn, key: .useZed)
+        SFX.shared.stopBGMusic()
+        SFX.shared.playQuestionForLetter(.Z)
     }
 }
