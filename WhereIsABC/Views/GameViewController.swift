@@ -12,27 +12,48 @@ class GameViewController: BaseViewController {
     
     // MARK: - Properties
     
+    var gameModel: GameModel!
+    
+    @IBOutlet var buttons: [UIButton]!
+    
+    var letters: [Letter]!
+    var images: [UIImage]!
+    
     // MARK: - Overrides
     // MARK: Functions
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        gameModel = GameModel()
+        newGame()
     }
     
     private func newGame() {
+        letters = gameModel.newGame()
+        images = gameModel.generateImages(for: letters)
         
+        for (index, button) in buttons.enumerated() {
+            button.tag = letters[index].intValue!
+            button.setBackgroundImage(images[index], for: .normal)
+        }
     }
     
     private func correct() {
         SFX.shared.playCorrect()
-        delay(2) {
+        delay(3) {
             self.newGame()
         }
     }
     
     private func wrong() {
         SFX.shared.playWrong()
+    }
+    
+    // MARK - IBActions
+    
+    @IBAction func selectAnswer(_ sender: Any) {
+        
     }
     
     @IBAction func exit(_ sender: Any) {

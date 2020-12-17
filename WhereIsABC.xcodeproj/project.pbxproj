@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		45250B852585469700B1231D /* String+GameIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B842585469700B1231D /* String+GameIcon.swift */; };
 		45250B9225854A7500B1231D /* UtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45250B9125854A7500B1231D /* UtilsTests.swift */; };
-		452515222586786C000E4935 /* WIAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452515212586786C000E4935 /* WIAButton.swift */; };
 		452FB8C1258A709000A0C565 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8BE258A709000A0C565 /* bg.mp3 */; };
 		452FB8C2258A709000A0C565 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8BF258A709000A0C565 /* correct.wav */; };
 		452FB8C3258A709000A0C565 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 452FB8C0258A709000A0C565 /* wrong.mp3 */; };
@@ -73,6 +72,7 @@
 		452FB95C258B88C400A0C565 /* SFX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB95B258B88C400A0C565 /* SFX.swift */; };
 		452FB961258B948C00A0C565 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB960258B948C00A0C565 /* AppDefaults.swift */; };
 		452FB969258B970B00A0C565 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB968258B970B00A0C565 /* Letter.swift */; };
+		452FB977258BA37E00A0C565 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB976258BA37E00A0C565 /* GameModel.swift */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
@@ -114,7 +114,6 @@
 		45250B842585469700B1231D /* String+GameIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GameIcon.swift"; sourceTree = "<group>"; };
 		45250B9025854A7500B1231D /* WhereIsABCTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhereIsABCTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		45250B9125854A7500B1231D /* UtilsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsTests.swift; sourceTree = "<group>"; };
-		452515212586786C000E4935 /* WIAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WIAButton.swift; sourceTree = "<group>"; };
 		452FB8BE258A709000A0C565 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = "<group>"; };
 		452FB8BF258A709000A0C565 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
 		452FB8C0258A709000A0C565 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = wrong.mp3; sourceTree = "<group>"; };
@@ -178,6 +177,7 @@
 		452FB95B258B88C400A0C565 /* SFX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFX.swift; sourceTree = "<group>"; };
 		452FB960258B948C00A0C565 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		452FB968258B970B00A0C565 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
+		452FB976258BA37E00A0C565 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -348,6 +348,7 @@
 		457A002E25815C4100C37417 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				452FB976258BA37E00A0C565 /* GameModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -385,7 +386,6 @@
 			isa = PBXGroup;
 			children = (
 				4589315A2582B719004A9BC9 /* BaseViewController.swift */,
-				452515212586786C000E4935 /* WIAButton.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -754,8 +754,8 @@
 				452FB8D3258A83B000A0C565 /* UIViewController+Utils.swift in Sources */,
 				457A00382581BF1300C37417 /* SplashViewController.swift in Sources */,
 				4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */,
+				452FB977258BA37E00A0C565 /* GameModel.swift in Sources */,
 				452FB8C8258A80C800A0C565 /* GameViewController.swift in Sources */,
-				452515222586786C000E4935 /* WIAButton.swift in Sources */,
 				45C905E4257D28DD00465BD1 /* AppDelegate.swift in Sources */,
 				452FB969258B970B00A0C565 /* Letter.swift in Sources */,
 				45C905E6257D28DD00465BD1 /* SceneDelegate.swift in Sources */,
