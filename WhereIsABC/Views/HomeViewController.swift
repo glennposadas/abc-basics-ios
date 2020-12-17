@@ -27,14 +27,14 @@ class HomeViewController: BaseViewController {
         super.viewWillAppear(animated)
         
         
-        playBGMusic()
+        SFX.shared.playBGMusic()
         animatePlayButton()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        stopBGMusic()
+        SFX.shared.stopBGMusic()
     }
     
     private func setupViews() {

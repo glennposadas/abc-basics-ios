@@ -12,8 +12,6 @@ class GameViewController: BaseViewController {
     
     // MARK: - Properties
     
-    private var audioPlayer: AVAudioPlayer?
-    
     // MARK: - Overrides
     // MARK: Functions
     
@@ -26,23 +24,15 @@ class GameViewController: BaseViewController {
         
     }
     
-    private func playCorrect() {
-        playFile("correct2.mp3")
+    private func correct() {
+        SFX.shared.playCorrect()
         delay(2) {
             self.newGame()
         }
     }
     
-    private func playWrong() {
-        playFile("wrong.mp3")
-    }
-    
-    private func playFile(_ fileName: String) {
-        let soundFilePath = "\(Bundle.main.resourcePath ?? "")/\(fileName)"
-        let soundFileURL = URL(fileURLWithPath: soundFilePath)
-        
-        audioPlayer = try? AVAudioPlayer(contentsOf: soundFileURL)
-        audioPlayer?.play()
+    private func wrong() {
+        SFX.shared.playWrong()
     }
     
     @IBAction func exit(_ sender: Any) {
@@ -58,9 +48,9 @@ class GameViewController: BaseViewController {
     }
     
     @IBAction func repeatQuestion(_ sender: Any) {
-        self.playWrong()
+        self.wrong()
         delay(2) {
-            self.playCorrect()
+            self.correct()
         }
     }
 }
