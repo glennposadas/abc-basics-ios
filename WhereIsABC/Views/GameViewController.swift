@@ -22,8 +22,15 @@ class GameViewController: BaseViewController {
         
     }
     
+    private func newGame() {
+        
+    }
+    
     private func playCorrect() {
-        playFile("correct.wav")
+        playFile("correct2.mp3")
+        delay(2) {
+            self.newGame()
+        }
     }
     
     private func playWrong() {
@@ -52,7 +59,7 @@ class GameViewController: BaseViewController {
     
     @IBAction func repeatQuestion(_ sender: Any) {
         self.playWrong()
-        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+        delay(2) {
             self.playCorrect()
         }
     }
