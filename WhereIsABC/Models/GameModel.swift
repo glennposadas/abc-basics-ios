@@ -22,15 +22,26 @@ class GameModel {
         letters.map { image(for: $0) }
     }
     
-    func newGame() -> [Letter] {
-        var letters = [Letter]()
-        
-        for _ in 1..<5 {
-            let letterIndex = Int.random(in: 1..<27)
-            let newLetter = Letter(intValue: letterIndex)!
-            letters.append(newLetter)
+    private func getRandomNumbers(maxNumber: Int, listSize: Int) -> [Int] {
+        var randomNumbers = Set<Int>()
+        while randomNumbers.count < listSize {
+            let randomNumber = Int.random(in: 1..<maxNumber + 1)
+            randomNumbers.insert(randomNumber)
         }
         
-        return letters
+        return Array(randomNumbers)
+    }
+    
+    /// Returns the correct answer and all of the options in a tuple.
+    func newGame() -> (answer: Letter, options: [Letter]) {
+        var letters = [Letter]()
+        
+        letters = getRandomNumbers(maxNumber: 4, listSize: 4)
+            .compactMap { Letter(intValue: $0) }
+        
+        let answerIndex = Int.random(in: 1..<5)
+        let answer = letters[answerIndex - 1]
+        
+        return (answer, letters)
     }
 }

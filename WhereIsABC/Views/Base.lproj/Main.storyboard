@@ -92,7 +92,6 @@
                                                     <constraint firstAttribute="width" secondItem="76O-aA-zQm" secondAttribute="height" multiplier="1:1" id="5Id-e8-42S"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" backgroundImage="a"/>
                                                 <connections>
                                                     <action selector="selectAnswer:" destination="AFE-mF-OSF" eventType="touchUpInside" id="ARe-Ln-Ffc"/>
                                                 </connections>
@@ -103,7 +102,6 @@
                                                     <constraint firstAttribute="width" secondItem="Uyy-hz-Hxt" secondAttribute="height" multiplier="1:1" id="Nbh-R2-4bI"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" backgroundImage="b"/>
                                                 <connections>
                                                     <action selector="selectAnswer:" destination="AFE-mF-OSF" eventType="touchUpInside" id="h0W-5y-1y6"/>
                                                 </connections>
@@ -119,7 +117,6 @@
                                                     <constraint firstAttribute="width" secondItem="e5m-AO-gJz" secondAttribute="height" multiplier="1:1" id="8wo-Ut-ysz"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" backgroundImage="a"/>
                                                 <connections>
                                                     <action selector="selectAnswer:" destination="AFE-mF-OSF" eventType="touchUpInside" id="6kV-ja-tkk"/>
                                                 </connections>
@@ -130,7 +127,6 @@
                                                     <constraint firstAttribute="width" secondItem="XyU-dj-ut7" secondAttribute="height" multiplier="1:1" id="UHO-iE-km2"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                                <state key="normal" backgroundImage="b"/>
                                                 <connections>
                                                     <action selector="selectAnswer:" destination="AFE-mF-OSF" eventType="touchUpInside" id="Qd0-C0-onE"/>
                                                 </connections>
@@ -159,6 +155,9 @@
                     </view>
                     <connections>
                         <outletCollection property="buttons" destination="76O-aA-zQm" collectionClass="NSMutableArray" id="TKT-YF-e51"/>
+                        <outletCollection property="buttons" destination="Uyy-hz-Hxt" collectionClass="NSMutableArray" id="zjy-Nb-lEM"/>
+                        <outletCollection property="buttons" destination="e5m-AO-gJz" collectionClass="NSMutableArray" id="G06-rx-hQg"/>
+                        <outletCollection property="buttons" destination="XyU-dj-ut7" collectionClass="NSMutableArray" id="hN8-UR-Lv7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VrS-xf-Lzt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -271,8 +270,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="a" width="92.5" height="93"/>
-        <image name="b" width="93" height="93"/>
         <image name="ic_bee" width="80" height="65"/>
         <image name="ic_cat" width="81" height="80.5"/>
         <image name="ic_cow" width="80" height="64"/>

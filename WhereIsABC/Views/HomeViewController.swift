@@ -28,6 +28,7 @@ class HomeViewController: BaseViewController {
         
         SFX.shared.playBGMusic()
         animatePlayButton()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -37,7 +38,7 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupViews() {
-        
+
     }
     
     private func animatePlayButton() {

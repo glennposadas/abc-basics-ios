@@ -73,6 +73,7 @@
 		452FB961258B948C00A0C565 /* AppDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB960258B948C00A0C565 /* AppDefaults.swift */; };
 		452FB969258B970B00A0C565 /* Letter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB968258B970B00A0C565 /* Letter.swift */; };
 		452FB977258BA37E00A0C565 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB976258BA37E00A0C565 /* GameModel.swift */; };
+		452FB97F258BAC3600A0C565 /* SAConfettiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 452FB97E258BAC3600A0C565 /* SAConfettiView.swift */; };
 		457A00382581BF1300C37417 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 457A00372581BF1300C37417 /* SplashViewController.swift */; };
 		458931472582ADAE004A9BC9 /* beachday.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931452582ADAE004A9BC9 /* beachday.ttf */; };
 		458931482582ADAE004A9BC9 /* Bubble Bobble.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */; };
@@ -178,6 +179,7 @@
 		452FB960258B948C00A0C565 /* AppDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefaults.swift; sourceTree = "<group>"; };
 		452FB968258B970B00A0C565 /* Letter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Letter.swift; sourceTree = "<group>"; };
 		452FB976258BA37E00A0C565 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		452FB97E258BAC3600A0C565 /* SAConfettiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SAConfettiView.swift; sourceTree = "<group>"; };
 		457A00372581BF1300C37417 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		458931452582ADAE004A9BC9 /* beachday.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beachday.ttf; sourceTree = "<group>"; };
 		458931462582ADAE004A9BC9 /* Bubble Bobble.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bubble Bobble.ttf"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 				457A00372581BF1300C37417 /* SplashViewController.swift */,
 				45893168258348C2004A9BC9 /* HomeViewController.swift */,
 				452FB8C7258A80C800A0C565 /* GameViewController.swift */,
+				452FB97E258BAC3600A0C565 /* SAConfettiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 			files = (
 				45893169258348C2004A9BC9 /* HomeViewController.swift in Sources */,
 				45250B852585469700B1231D /* String+GameIcon.swift in Sources */,
+				452FB97F258BAC3600A0C565 /* SAConfettiView.swift in Sources */,
 				452FB8D3258A83B000A0C565 /* UIViewController+Utils.swift in Sources */,
 				457A00382581BF1300C37417 /* SplashViewController.swift in Sources */,
 				4589315B2582B719004A9BC9 /* BaseViewController.swift in Sources */,
