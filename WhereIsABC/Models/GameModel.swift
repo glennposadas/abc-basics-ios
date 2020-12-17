@@ -36,7 +36,7 @@ class GameModel {
     func newGame() -> (answer: Letter, options: [Letter]) {
         var letters = [Letter]()
         
-        letters = getRandomNumbers(maxNumber: 4, listSize: 4)
+        letters = getRandomNumbers(maxNumber: 26, listSize: 4)
             .compactMap { Letter(intValue: $0) }
         
         let answerIndex = Int.random(in: 1..<5)
