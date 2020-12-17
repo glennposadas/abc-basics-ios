@@ -28,6 +28,7 @@ class SFX {
         let soundFileURL = URL(fileURLWithPath: soundFilePath)
         
         player = try? AVAudioPlayer(contentsOf: soundFileURL)
+        player?.volume = 1.0
         player?.play()
     }
     
