@@ -19,19 +19,18 @@
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
-    <key>GADApplicationIdentifier</key>
-    <string>ca-app-pub-7352177825579783~7289602979</string>
-    <key>SKAdNetworkItems</key>
-      <array>
-        <dict>
-          <key>SKAdNetworkIdentifier</key>
-          <string>cstr6suwn9.skadnetwork</string>
-        </dict>
-      </array>
-      
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>GADApplicationIdentifier</key>
+	<string>ca-app-pub-7352177825579783~7289602979</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>SKAdNetworkItems</key>
+	<array>
+		<dict>
+			<key>SKAdNetworkIdentifier</key>
+			<string>cstr6suwn9.skadnetwork</string>
+		</dict>
+	</array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>beachday.ttf</string>

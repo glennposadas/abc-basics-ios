@@ -10,9 +10,9 @@ end
 
 target 'WhereIsABC' do
     
-    pod 'Firebase/Analytics'
-    pod 'Firebase/Crashlytics'
-    pod 'Google-Mobile-Ads-SDK'
+#    pod 'Firebase/Analytics'
+#    pod 'Firebase/Crashlytics'
+#    pod 'Google-Mobile-Ads-SDK'
 
     target 'WhereIsABCTests' do
         test_pods
