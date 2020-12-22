@@ -383,7 +383,6 @@
 				45C905F9257D28DE00465BD1 /* WhereIsABCTests */,
 				45C90604257D28DE00465BD1 /* WhereIsABCUITests */,
 				45C905E1257D28DD00465BD1 /* Products */,
-				8CE1711DE03ADA554F997600 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -427,13 +426,6 @@
 				45C90607257D28DE00465BD1 /* Info.plist */,
 			);
 			path = WhereIsABCUITests;
-			sourceTree = "<group>";
-		};
-		8CE1711DE03ADA554F997600 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
