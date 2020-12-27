@@ -222,7 +222,6 @@
 			children = (
 				452FB960258B948C00A0C565 /* AppDefaults.swift */,
 				452FB956258B6C6A00A0C565 /* Delay.swift */,
-				452FB968258B970B00A0C565 /* Letter.swift */,
 				452FB95B258B88C400A0C565 /* SFX.swift */,
 				45250B842585469700B1231D /* String+GameIcon.swift */,
 				452FB8D2258A83B000A0C565 /* UIViewController+Utils.swift */,
@@ -334,6 +333,7 @@
 		457A002E25815C4100C37417 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				452FB968258B970B00A0C565 /* Letter.swift */,
 				452FB976258BA37E00A0C565 /* GameModel.swift */,
 			);
 			path = Models;
@@ -342,7 +342,6 @@
 		457A002F25815C4700C37417 /* Plist */ = {
 			isa = PBXGroup;
 			children = (
-				458931442582AD71004A9BC9 /* Fonts */,
 				45C905F1257D28DD00465BD1 /* Info.plist */,
 				452FB8D7258A8CB600A0C565 /* GoogleService-Info.plist */,
 			);
@@ -352,6 +351,7 @@
 		457A003025815C4F00C37417 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				458931442582AD71004A9BC9 /* Fonts */,
 				4525152625868F08000E4935 /* SFX */,
 				45C905EC257D28DD00465BD1 /* Assets.xcassets */,
 				45C905EE257D28DD00465BD1 /* LaunchScreen.storyboard */,
